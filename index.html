@@ -7,6 +7,13 @@
     <title>BenLin的個人網站</title>
 
     <!-- css link -->
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
     <!-- bootstrap -->
     <link
       rel="stylesheet"
@@ -20,24 +27,25 @@
   <body>
     <!-- showcase -->
     <div id="showcase">
+      <!-- 沒有加入min-width控制最小視窗，因為放在header的圖片如果加了，模糊效果範圍會只剩min-width的範圍-->
       <header>
         <nav class="navbar navbar-expand-sm navbar-light">
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item current">
-                <a href="index.html" class="nav-link">首頁</a>
+                <a href="#" class="nav-link">首頁</a>
               </li>
               <li class="nav-item">
-                <a href="about.html" class="nav-link">關於我</a>
+                <a href="#about" class="nav-link">關於我</a>
               </li>
               <li class="nav-item">
-                <a href="work.html" class="nav-link">練習&作品</a>
+                <a href="#work" class="nav-link">練習&作品</a>
               </li>
               <li class="nav-item">
-                <a href="note.html" class="nav-link">筆記</a>
+                <a href="#note" class="nav-link">筆記</a>
               </li>
               <li class="nav-item">
-                <a href="contact.html" class="nav-link">聯絡我</a>
+                <a href="#contact" class="nav-link">聯絡我</a>
               </li>
             </ul>
           </div>
@@ -46,12 +54,75 @@
       <div class="showcase-section container">
         <h1 class="mb"><span>Ben</span>Lin</h1>
         <h3 class="mb">紀錄學習點滴，歡迎互相交流。</h3>
-        <p class="paragraph">
+        <p class="paragraph hide-on-small">
           你好，歡迎來到屬於我的小空間，我是前端菜鳥，還有很多東西需要熟悉學習，還請路過的前輩不吝請教、指點，謝謝。
         </p>
+        <div class="icon">
+          <a href="mailto:wide8550@gmail.com">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100000144235505" target="_blank">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="https://github.com/wide8550" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="https://codepen.io/wide8550/">
+            <i class="fab fa-codepen fa-2x"></i>
+          </a>
+        </div>
       </div>
     </div>
     <!-- end of showcase -->
+
+    <!-- about section-->
+    <Section class="about-section section">
+      <div class="container">
+        <!-- portrait -->
+        <div id="portrait">
+          <img src="dist/img/portrait.png" alt="" />
+        </div>
+
+        <!-- self info -->
+        <div>
+
+        </div>
+
+        <!--  skill info-->
+        <div class="container">
+            <div class="carousel slide" data-ride="carousel" id="carousel-demo">
+                 <ol class="carousel-indicators">
+                   <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+                   <li data-target="#carousel-demo" data-slide-to="1"></li>
+                   <li data-target="#carousel-demo" data-slide-to="2"></li>
+                 </ol>
+               <div class="carousel-inner">
+                 <div class="carousel-item active">
+                   <img class="d-block w-100" src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_412_8.jpg" alt="">
+                 </div>
+                 <div class="carousel-item">
+                   <img class="d-block w-100" src="http://farm4.staticflickr.com/3795/9269794168_3ac58fc15c_b.jpg" alt="">
+                 </div>
+                 <div class="carousel-item">
+                   <img class="d-block w-100" src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_3266_19.jpg" alt="">
+                 </div>
+               
+                 <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+                 <span class="carousel-control-prev-icon"></span>
+                 </a>
+                 <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+                   <span class="carousel-control-next-icon"></span>
+                 </a>
+               </div>
+             </div>
+         </div>
+      </div>
+    </Section>
+    <!-- work section -->
+
+    <!-- note section -->
+
+    <!-- contact section -->
 
     <!-- js script -->
 

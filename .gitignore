@@ -4,3 +4,4 @@
 *.map
 # 忽略資料夾 style 的檔案
 /style
+progress.md
